@@ -1,0 +1,15 @@
+.slider-container .slick-slide {
+    padding: 0 5px;
+    /* Ajustez cette valeur pour réduire l'espace */
+}
+
+.slider-container .slick-list {
+    margin: 0 -5px;
+    /* Compense le padding des slides */
+}
+
+.slider-container .slick-track {
+    display: flex;
+    gap: 0;
+    /* Supprime l'espace par défaut */
+}
