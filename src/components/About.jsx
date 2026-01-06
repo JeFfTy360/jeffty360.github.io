@@ -11,67 +11,48 @@ import WorkIcon from "@mui/icons-material/Work";
 export const experience = [
     {
         date: "Jan 2022 – Present",
-        title: "Développeur & Support Informatique freelance",
+        title: "Freelance Developer & IT Support",
         subtitle: "Freelance",
         description:
-            "Développement de sites web et d’applications, assistance technique et maintenance informatique pour différents clients.",
-        skills: [
-            "React",
-            "JavaScript",
-            "Support IT",
-            "Maintenance",
-            "Web Development",
-        ],
+            "Development of websites and applications, technical assistance, and IT maintenance for various clients.",
         icon: <WorkIcon />,
     },
     {
         date: "Jan 2020 – Dec 2021",
-        title: "Développeur Réalité Virtuelle",
+        title: "Virtual Reality Developer",
         subtitle: "École Supérieure d'Infotronique d'Haïti (ESIH)",
         description:
-            "Collaboration avec le laboratoire de réalité virtuelle de l’ESIH. Participation à plusieurs projets de réalité virtuelle, notamment Afro-American Caribbean Matrimony (MAAC).",
-        skills: [
-            "Réalité Virtuelle",
-            "Unity",
-            "C#",
-            "UX",
-        ],
+            "Collaboration with the ESIH Virtual Reality Laboratory. Participation in several virtual reality projects, including Afro-American Caribbean Matrimony (MAAC).",
+
         icon: <WorkIcon />,
     },
     {
         date: "Aug 2020 – Sep 2023",
-        title: "Fondateur & Développeur",
+        title: "Founder & Developer",
         subtitle: "Haiti Virtual Tour",
         description:
-            "Fondation et développement de Haiti Virtual Tour, une plateforme immersive permettant de visiter virtuellement différentes régions d’Haïti sur mobile, desktop et casque VR.",
-        skills: [
-            "Unity",
-            "C#",
-            "VR",
-            "Entrepreneuriat",
-            "UX Design",
-        ],
+            "Founded and developed Haiti Virtual Tour, an immersive platform enabling virtual visits of different regions of Haiti on mobile, desktop, and VR headsets.",
         icon: <WorkIcon />,
     },
 ];
 
 const education = [
     {
-        date: "2019 – 20",
-        title: "Systèmes et technologies de l’information - Développement et administration des SI",
-        subtitle: "Université d'État d'Astrakhan",
+        date: "2019 – Present",
+        title: "Information Systems and Technologies – Information Systems Development and Administration",
+        subtitle: "Astrakhan State University",
         // description:
         //     "Développement logiciel, algorithmes, bases de données, systèmes informatiques.",
-        skills: ["Python", "C++", "SQL", "Algorithmique"],
+        skills: ["Astrakhan, Russia"],
         icon: <SchoolIcon />,
     },
     {
         date: "2019 – 2021",
-        title: "Sciences Informatiques & Gestion",
-        subtitle: " École Supérieure d'Infotronique d'Haiti",
+        title: "Computer Science & Management",
+        subtitle: "École Supérieure d'Infotronique d'Haiti (ESIH)",
         // description:
         //     "Bases solides en programmation, mathématiques et logique.",
-        // skills: ["C", "Maths", "Structures de données"],
+        skills: ["Port-au-Prince, Haiti"],
         icon: <SchoolIcon />,
     },
 ];
@@ -86,7 +67,7 @@ function About() {
 
 
     return (
-        <WrapperSection>
+        <WrapperSection >
             <Title style={{
                 // backgroundColor: 'red',
                 display: 'flex',
@@ -94,7 +75,7 @@ function About() {
                 gap: '1rem'
             }} titre_1="Get To Know More" titre_2="About me" />
 
-            <Image>
+            <Image id="about">
                 <img style={{ borderRadius: "1000px", width: "150px", margin: "2px" }} src="aboutMe.png" />
             </Image>
             <Typography textAlign="justify" sx={{
@@ -108,7 +89,10 @@ function About() {
                 },
                 fontSize: { sm: '1.3rem', xs: '1rem' }
             }}>
-                Passionné de sciences et de technologies, je suis curieux, motivé, créatif et déterminé. Je suis toujours très enthousiaste apprendre de nouvelles compétences. Avec un vif intérêt pour la programmation, l’électronique et la conception d’algorithmes, j’aime créer des solutions qui allient fonctionnalité et créativité. Mon parcours est alimenté par l’apprentissage continu, l’expérience pratique et le désir de transformer des idées en réalité. je suis particulièrement dévoué à résoudre les problèmes des utilisateurs et à offrir un soutien efficace.
+                {/* Passionné de sciences et de technologies, je suis curieux, motivé, créatif et déterminé. Je suis toujours très enthousiaste apprendre de nouvelles compétences. Avec un vif intérêt pour la programmation, l’électronique et la conception d’algorithmes, j’aime créer des solutions qui allient fonctionnalité et créativité. Mon parcours est alimenté par l’apprentissage continu, l’expérience pratique et le désir de transformer des idées en réalité. je suis particulièrement dévoué à résoudre les problèmes des utilisateurs et à offrir un soutien efficace. */}
+
+                Passionate about science and technology, I am curious, motivated, creative, and determined. I am always highly enthusiastic about learning new skills. With a strong interest in programming, electronics, and algorithm design, I enjoy creating solutions that combine functionality and creativity. My journey is driven by continuous learning, hands-on experience, and the desire to turn ideas into reality. I am particularly dedicated to solving users’ problems and providing effective support.
+
             </Typography>
 
             <Box sx={{

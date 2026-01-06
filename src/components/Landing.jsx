@@ -92,7 +92,7 @@ function Landing() {
 
 
     return (
-        <Landing>
+        <Landing >
             <TextSection sx={{ order: { xs: 3, md: 1 } }}>
                 <Typography variant='p' sx={{
                     fontSize: { xs: '2rem', md: '3rem', sm: '3rem' },

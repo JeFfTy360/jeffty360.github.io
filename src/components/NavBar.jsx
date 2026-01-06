@@ -3,6 +3,16 @@ import { AppBar, Box, Button, IconButton, Link, MenuItem, Stack, styled, Tab, Ta
 import Menu from '@mui/material/Menu';
 import React, { useState } from 'react'
 
+
+const navSections = {
+    About: "about",
+    Skills: "skills",
+    Project: "projects",
+    Hobby: "hobby",
+    Contact: "contact",
+};
+
+
 function NavBar() {
 
     const [open, setOpen] = useState(false)
@@ -82,16 +92,19 @@ function NavBar() {
             <Logo >
                 Jephte Francois M
             </Logo>
-            <NavOptionsGroup >
-                {
-                    ['About', 'Experience', 'Project', 'Article', 'Contact'].map((label) => {
-                        return <NavOption
-                            key={label}
-                            active={(activeNav === label).toString()}
-                            onClick={() => setActiveNav(label)}
-                        >{label}</NavOption>
-                    })
-                }
+            <NavOptionsGroup>
+                {Object.keys(navSections).map((label) => (
+                    <NavOption
+                        key={label}
+                        active={(activeNav === label).toString()}
+                        onClick={() => {
+                            setActiveNav(label);
+                            window.location.hash = navSections[label];
+                        }}
+                    >
+                        {label}
+                    </NavOption>
+                ))}
             </NavOptionsGroup>
             <SmallScreenOption>
                 <Menu_icon sx={{ color: "black", fontSize: "3rem" }} onClick={handleOpen} />

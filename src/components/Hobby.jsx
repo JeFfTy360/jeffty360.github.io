@@ -15,7 +15,7 @@ export default function Hobby() {
     ];
 
     return (
-        <Box sx={{ padding: "2rem 5rem" }}>
+        <Box id="hobby" sx={{ padding: "2rem 5rem" }}>
             <Title titre_1="Explore" titre_2="My Hobbies" />
             <Box display="flex" flexDirection="row" justifyContent="space-around">
                 <Typography
@@ -27,10 +27,8 @@ export default function Hobby() {
                         lineHeight: 1.7,
                     }}
                 >
-                    I enjoy exploring new technologies, building immersive
-                    virtual reality experiences, traveling to discover new
-                    cultures, and expressing creativity through music and
-                    digital projects.
+                    I have been practicing guitar, piano, and saxophone for over five years.
+                    As an amateur photographer, I am especially drawn to nature photography, a universe I am gradually discovering and exploring.
                 </Typography>
 
                 <Box

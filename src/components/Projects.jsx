@@ -23,57 +23,57 @@ export default function Projects() {
         {
             title: "Snake Game (Terminal)",
             description:
-                "Implémentation classique du jeu Snake dans un terminal avec interface ASCII.",
-            medias: ["snake.gif", "snake1.png", "snake2.png"],
+                "A complete and fully functional implementation of the classic arcade game Snake, developed entirely in Python. The game runs directly in the terminal and uses ASCII characters for its graphical interface.",
+            medias: ["snake2.gif", "snake1.png", "snake2.png"],
             technologies: ["Python", "keyboard", "os", "time", "json"],
             github: "https://github.com/yourusername/snake-game-terminal",
             live: "https://github.com/yourusername/snake-game-terminal",
         },
         {
-            title: "Snake Game (Terminal)",
+            title: "Let's go - AstrakhanXcurtion",
             description:
-                "Implémentation classique du jeu Snake dans un terminal avec interface ASCII.",
-            medias: ["snake.gif", "snake1.png", "snake2.png"],
-            technologies: ["Python", "keyboard", "os", "time", "json"],
+                "A robust web application developed with Python and Django, designed to enable the creation, sharing, and management of interactive excursions and guided tours. Registered and logged-in users can create excursions, which are reviewed and validated by moderators. Visitors can select excursions, complete them on-site, and then rate or comment on them. Each excursion consists of points that users can follow on an interactive map in real time.",
+            medias: ["astra1.png", "astra2.png", "astra3.png"],
+            technologies: ["Python/Django", "Html/Css", "JavaScript", "Django Channels", "Redis", "Yandex Maps API"],
             github: "https://github.com/yourusername/snake-game-terminal",
             live: "https://github.com/yourusername/snake-game-terminal",
         },
         {
-            title: "Snake Game (Terminal)",
+            title: "Astrakhan Events",
             description:
-                "Implémentation classique du jeu Snake dans un terminal avec interface ASCII.",
-            medias: ["snake.gif", "snake1.png", "snake2.png"],
-            technologies: ["Python", "keyboard", "os", "time", "json"],
+                "A web-based event management system designed to simplify the creation, promotion, and management of events. The platform enables organizers to control the entire event lifecycle, from ticket sales to real-time participant validation through a QR code system.",
+            medias: ["event1.png", "event2.png", "event3.png", "event4.png"],
+            technologies: ["Python/Django", "Html/Css", "JavaScript"],
             github: "https://github.com/yourusername/snake-game-terminal",
             live: "https://github.com/yourusername/snake-game-terminal",
         },
         {
-            title: "Snake Game (Terminal)",
+            title: "Mini Bank",
             description:
-                "Implémentation classique du jeu Snake dans un terminal avec interface ASCII.",
-            medias: ["snake.gif", "snake1.png", "snake2.png"],
-            technologies: ["Python", "keyboard", "os", "time", "json"],
+                "A desktop application designed to simulate the operation of a basic banking system, enabling simple and efficient management of clients, bank accounts, and transactions. The application provides comprehensive client management features, including adding new clients, updating existing information, displaying the complete list of clients, and searching for specific clients. It also supports the management of bank accounts associated with clients, allowing account creation, activation and deactivation, viewing all existing accounts, and performing targeted searches. Finally, the transaction management module enables credit (deposit) and debit (withdrawal) operations while maintaining a detailed history of all transactions performed.",
+            medias: ["bank_1.png", "bank_2.png", "bank_3.png", "bank_4.png"],
+            technologies: ["C++", "Qt", "QMake", "Mysql"],
             github: "https://github.com/yourusername/snake-game-terminal",
             live: "https://github.com/yourusername/snake-game-terminal",
         },
         {
-            title: "Snake Game (Terminal)",
+            title: "Haiti Virtual Tour",
             description:
-                "Implémentation classique du jeu Snake dans un terminal avec interface ASCII.",
-            medias: ["snake.gif", "snake1.png", "snake2.png"],
-            technologies: ["Python", "keyboard", "os", "time", "json"],
+                "Haiti Virtual Tour, an immersive platform that enables virtual visits to different regions of Haiti from a smartphone, tablet, computer, or virtual reality headset.",
+            medias: ["hvt1.gif", "hvt2.gif", "hvt3.png", "hvt4.png", "hvt5.png"],
+            technologies: ["Javascript", "360° Photography", "Html/css", "c#", "unity"],
             github: "https://github.com/yourusername/snake-game-terminal",
             live: "https://github.com/yourusername/snake-game-terminal",
         },
-        {
-            title: "Snake Game (Terminal)",
-            description:
-                "Implémentation classique du jeu Snake dans un terminal avec interface ASCII.",
-            medias: ["snake.gif", "snake1.png", "snake2.png"],
-            technologies: ["Python", "keyboard", "os", "time", "json"],
-            github: "https://github.com/yourusername/snake-game-terminal",
-            live: "",
-        },
+        // {
+        //     title: "Snake Game (Terminal)",
+        //     description:
+        //         "Implémentation classique du jeu Snake dans un terminal avec interface ASCII.",
+        //     medias: ["snake.gif", "snake1.png", "snake2.png"],
+        //     technologies: ["Python", "keyboard", "os", "time", "json"],
+        //     github: "https://github.com/yourusername/snake-game-terminal",
+        //     live: "",
+        // },
     ];
 
     const sliderSettings = {
@@ -86,7 +86,7 @@ export default function Projects() {
     };
 
     return (
-        <Box sx={{ padding: "2rem 5rem" }}>
+        <Box id="projects" sx={{ padding: "2rem 5rem" }}>
             <Title titre_1="Explore" titre_2="My Projects" />
 
             <Grid container spacing={4} m={2}
@@ -103,15 +103,18 @@ export default function Projects() {
                                 boxShadow: 4,
                                 padding: "1.5rem",
                                 backgroundColor: "#ffffff08",
+                                maxWidth: "542px",
+                                minHeight: "650px",
                                 display: "flex",
                                 flexDirection: "column",
                                 alignItems: "center",
+                                justifyContent: "space-around"
                             }}
                         >
                             {/* 🔹 Slider carré */}
                             <Box
                                 sx={{
-                                    width: 220,
+                                    width: 440,
                                     height: 220,
                                     mb: 2,
                                 }}
@@ -121,7 +124,7 @@ export default function Projects() {
                                         <Box
                                             key={i}
                                             sx={{
-                                                width: 220,
+                                                width: 1000,
                                                 height: 220,
                                                 display: "flex",
                                                 justifyContent: "center",
@@ -154,6 +157,8 @@ export default function Projects() {
                                     variant="body2"
                                     color="text.secondary"
                                     mb={2}
+                                    textAlign="justify"
+
                                 >
                                     {project.description}
                                 </Typography>
@@ -161,7 +166,7 @@ export default function Projects() {
                                 {/* 🔹 Tech */}
                                 <Stack
                                     direction="row"
-                                    spacing={1}
+                                    gap={1}
                                     flexWrap="wrap"
                                     justifyContent="center"
                                     mb={2}

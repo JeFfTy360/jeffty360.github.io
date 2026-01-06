@@ -55,7 +55,7 @@ export default function Skills() {
     };
 
     return (
-        <Box sx={{ padding: "2rem 5rem" }} className="slider-container">
+        <Box id="skills" sx={{ padding: "2rem 5rem" }} className="slider-container">
             <Title titre_1="Explore" titre_2="My technology stack" />
 
             <Box sx={{ padding: "2rem 10rem" }} className="slider-container">
