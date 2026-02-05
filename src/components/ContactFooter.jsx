@@ -164,7 +164,7 @@ export default function ContactFooter() {
                                 fullWidth
                                 variant="outlined"
                                 startIcon={<WhatsAppIcon />}
-                                href="https://wa.me/79962746497"
+                                href="https://wa.me/79962746496"
                                 target="_blank"
                             >
                                 WhatsApp

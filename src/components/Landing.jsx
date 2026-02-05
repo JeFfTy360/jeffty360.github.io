@@ -6,10 +6,17 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import Link from '@mui/material/Link';
 
 
 function Landing() {
 
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = "/cv.pdf";
+        link.download = "Jephte_Francois_Mondesir-cv.pdf";
+        link.click();
+    };
     const theme = useTheme()
 
     const Landing = styled(Stack)(({ theme }) => ({
@@ -128,8 +135,8 @@ function Landing() {
                     {/* Computer Scientist and Junior Developer */}
                 </Typography>
                 <ButtonSection>
-                    <Button onClick={() => console.log("contact")} startIcon={<Mail />} variant='contained'>Contact me</Button>
-                    <Button onClick={() => console.log("cv")} startIcon={<Download />} sx={{ backgroundColor: '#f0f9ff99' }} variant='contained'>Get my cv</Button>
+                    <Button onClick={() => window.location.hash = "contact"} startIcon={<Mail />} variant='contained'>Contact me</Button>
+                    <Button onClick={handleDownload} startIcon={<Download />} sx={{ backgroundColor: '#f0f9ff99' }} variant='contained'>Get my cv</Button>
                 </ButtonSection>
             </TextSection>
 
@@ -154,10 +161,21 @@ function Landing() {
                 }
 
             }}>
-                <FacebookIcon sx={{ fontSize: '2.5rem', color: '#0faaf8' }} />
-                <GitHubIcon sx={{ fontSize: '2.5rem', color: '#0faaf8' }} />
-                <LinkedInIcon sx={{ fontSize: '2.5rem', color: '#0faaf8' }} />
-                <InstagramIcon sx={{ fontSize: '2.5rem', color: '#0faaf8' }} />
+                <Link href="https://facebook.com/jephte francois" target="_blank" rel="noopener">
+                    <FacebookIcon sx={{ fontSize: '2.5rem', color: '#0faaf8', cursor: 'pointer' }} />
+                </Link>
+
+                <Link href="https://github.com/jeffty360" target="_blank" rel="noopener">
+                    <GitHubIcon sx={{ fontSize: '2.5rem', color: '#0faaf8', cursor: 'pointer' }} />
+                </Link>
+
+                <Link href="https://linkedin.com/in/" target="_blank" rel="noopener">
+                    <LinkedInIcon sx={{ fontSize: '2.5rem', color: '#0faaf8', cursor: 'pointer' }} />
+                </Link>
+
+                <Link href="https://instagram.com/_jeffty_" target="_blank" rel="noopener">
+                    <InstagramIcon sx={{ fontSize: '2.5rem', color: '#0faaf8', cursor: 'pointer' }} />
+                </Link>
             </Box>
 
         </Landing >
